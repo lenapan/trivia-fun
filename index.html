@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta name="description" content="Kenzie" />
+    <meta name="author" content="Kenzie" />
+    <meta name="keywords" content="Kenzie" />
+
+    <!-- Title Page -->
+    <title>Trivia Quiz</title>
+
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet" media="all" />
+  </head>
+  <body>
+    <header>Trivia Time!</header>
+
+    <div id ="body">
+      <aside id = "results">  
+          <h1 id="h1-score">
+            Score Board
+            <span id="playSound"> >> PLAY SOUND </span>
+            <audio src="assets/PowerStone2-ItemShop1.mp3" loop="repeat"></audio> 
+          </h1>
+          <section id="score-section">
+            <h3 id="count">0</h3>
+          </section>
+          <img>
+          <p id ="result"></p>
+          <img src="./assets/treasure.gif" width="30%" id="treasure"/>
+      </aside>
+
+      <main>
+
+          <button id="new-question">
+              Skip Current Question 
+          </button>
+    
+          <h2>Category: </h2> <span id="h2"></span>
+          <h3>Question: </h3> <span id="h3"></span>
+    
+          <small></small>
+          <p id ="hidden-answer"> </p>
+    
+          <section id ="search-container">
+            <input class="form-control" placeholder="Enter your answer" autofocus /> 
+            <p id ="timer"></p>
+          </section>
+
+      </main> 
+    </div>
+
+    <div id ="clue">
+        <img id = "dragon"/>      
+    </div>
+
+    <div id ="history">
+    </div>
+
+    <script type="module" src ="javascript/getData.js"></script>
+    <script type="module" src="javascript/renderHTML.js"></script>
+    <script type="module" src="javascript/giphy.js"></script>
+  </body>
+</html>

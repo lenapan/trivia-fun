@@ -1,0 +1,159 @@
+body{
+    font-family: "Comic Sans MS", cursive;
+    background-image: 
+    url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png'),/*clouds*/
+    url('./assets/bg.jpg');
+    background-repeat: repeat-x;
+
+    animation: 200s para infinite linear;
+    }
+    @keyframes para {
+    100% {
+        background-position: 
+        -5000px 20%,
+        -800px 95%,
+        500px 50%,
+        1000px 100%,
+        400px 0;
+        }
+}
+#body{
+    display: flex;
+    }
+header{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    opacity: 0.5;
+    height: 100px;
+    font-size: 30px;
+    color: green;
+    padding: 0 0 0 10px;
+}
+main{
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 20px 10px;
+    width: 100%;
+    background-image: url(assets/q.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 2px;
+}
+#hidden-answer{
+    color: #eee;
+    border-radius: 5px;
+    text-align: center;
+}
+#hidden-answer:hover{
+    color: limegreen;
+}
+
+#h2, #h3, h2, h3{
+    padding: 0 50px;
+    color:#333;
+}
+small{
+    color: rgba(0, 0, 0, 0.5);
+    padding:10px 0;
+    text-align: center;
+}
+aside{
+    border: 5px rgba(0, 0, 0, 0.1) solid;
+    border-radius: 5px;
+    margin: 10px 10px 20px 0;
+    width: 35%;
+    text-align: center;
+}
+/************ Style Button ***********************/
+#new-question{
+    background: none;
+    height: 40px;
+    border: none;
+}
+#new-question{
+    text-align: center;
+    border-radius: 5px;
+    color: limegreen;
+    border-top: 5px yellowgreen solid;
+}
+
+#new-question:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    border:none;
+}
+#new-question:hover{
+    color: magenta;
+    border-left: 5px aquamarine solid;
+    border-right: 5px aquamarine solid;
+    border-top: 5px aquamarine solid;
+    background: none;
+    font-weight: bold;
+}
+#treasure:hover{
+    cursor: help;
+}
+#new-question, input{
+    font-size: 20px;
+    font-family: "Comic Sans MS", cursive;
+}
+/************ Input Field ***********************/
+#search-container{
+    display: flex;
+    margin:0;
+    flex-direction: column;
+    text-align: center;
+}
+input{
+    height: 40px;
+    opacity: 0.7;
+    margin: 0 50px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+/************ Score board ***********************/
+#h1-score{
+    margin:5px;
+}
+#playSound {
+    color: limegreen;
+    font-size:14px;
+    margin-left: 10px;
+}
+#playSound:hover{
+    border-bottom: 1px limegreen solid;
+    cursor: pointer;
+}
+#count{
+    border-radius: 10px;
+    width:50px;
+    text-align: center;
+}
+#score-section{
+    display: flex;
+    justify-content: center;
+}
+img{
+    border-radius: 5px;
+}
+#timer{
+    color: mediumorchid;
+}
+/************ CLUE ***********************/
+#clue{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: limegreen;
+}
+/************ History ***********************/
+#history{
+    text-align: center;
+}

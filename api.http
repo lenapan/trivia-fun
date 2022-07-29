@@ -1,0 +1,11 @@
+GET https://jservice.kenzie.academy/api/games
+###
+
+GET https://jservice.kenzie.academy/api/categories
+###
+
+GET https://jservice.kenzie.academy/api/clues?category=40
+###
+
+GET https://jservice.kenzie.academy/api/random-clue?valid=true
+###
