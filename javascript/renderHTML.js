@@ -26,7 +26,7 @@ function renderHTML(json){
     span.textContent = "Hover below to see answer:"
     comment.append(span);
     //"Hidden" answer (for testing)
-    hidden.innerHTML = `${JSON.stringify(json.clues[random].answer).replace(/['"\)\(\/\\a]/g, '')}`
+    hidden.innerHTML = `${JSON.stringify(json.clues[random].answer).replace(/['"\)\(\/\\]/g, '')}`
     hidden.style.backgroundColor = "#eee"
     hidden.style.width= "20%"
     hidden.style.margin ="0 auto"
